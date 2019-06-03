@@ -16,8 +16,11 @@ class PBNAssetResource extends JsonResource
     {
         return [
             'id' => $this->id,
-            'tag' => $this->tag,
-            'barcode' => $this->barcode
+            'title' => $this->title,
+            'model' => $this->model,
+            'location' => $this->location,
+            'type' => $this->type_id,
+            'status' => $this->status_id
         ];
     }
 }
