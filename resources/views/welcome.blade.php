@@ -61,6 +61,17 @@
         .m-b-md {
             margin-bottom: 30px;
         }
+
+        .namerow {
+            background-color: lightgray;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+        table, tr, td {
+            border: 1px solid gray;
+        }
     </style>
 </head>
 <body>
@@ -72,34 +83,42 @@
         <p>Ce site sert de backend pour exercer les appels à une API depuis les applications mobiles développées dans le cours MOB1 (SI-T1a, juin 2019)</p>
         <p>Il sert les points d'entrées suivants:</p>
         <table style="text-align: left">
+            <tr><th>Fonction</th><th>Route</th><th>Méthode</th></tr>
+            <tr><td colspan="3" class="namerow">Dardan</td></tr>
             <tr>
-                <td style="padding: 5px">Liste des langues</td>
-                <td style="padding: 5px">api/v1/languages</td>
+                <td style="padding: 5px">Liste des utilisateurs</td>
+                <td style="padding: 5px">api/dii/users</td>
+                <td>GET</td>
             </tr>
+            <tr><td colspan="3" class="namerow">Senistan</td></tr>
             <tr>
-                <td style="padding: 5px">Liste des vocabulaires</td>
-                <td style="padding: 5px">api/v1/vocs</td>
+                <td style="padding: 5px">Liste des recettes</td>
+                <td style="padding: 5px">api/sjm/recipes</td>
+                <td>GET</td>
             </tr>
+            <tr><td colspan="3" class="namerow">Alexandre + Quentin</td></tr>
             <tr>
-                <td style="padding: 5px">Liste des vocabulaires avec leurs mots</td>
-                <td style="padding: 5px">api/v1/fullvocs</td>
+                <td style="padding: 5px">Liste des jobs</td>
+                <td style="padding: 5px">api/ajdqrr/jobs</td>
+                <td>GET</td>
             </tr>
+            <tr><td colspan="3" class="namerow">Quentin</td></tr>
             <tr>
-                <td style="padding: 5px">Liste des vocabulaires avec les langues X et Y (id)</td>
-                <td style="padding: 5px">api/v1/vocs/X/Y</td>
+                <td style="padding: 5px">Liste des vins</td>
+                <td style="padding: 5px">api/qns/wines</td>
+                <td>GET</td>
             </tr>
+            <tr><td colspan="3" class="namerow">Nicolas</td></tr>
             <tr>
-                <td style="padding: 5px">Contenu d'un vocabulaire précis</td>
-                <td style="padding: 5px">api/v1/voc/{id}</td>
+                <td style="padding: 5px">Liste des comptes</td>
+                <td style="padding: 5px">api/nhy/accounts</td>
+                <td>GET</td>
             </tr>
+            <tr><td colspan="3" class="namerow">Jarod</td></tr>
             <tr>
-                <td style="padding: 5px">Liste des devoirs d'un élève</td>
-                <td style="padding: 5px">api/v1/assignments/{token}</td>
-            </tr>
-            <tr>
-                <td style="padding: 5px">Retour de résultat (POST)</td>
-                <td style="padding: 5px">api/v1/result</td>
-                <td style="padding: 5px">id : of the assignment (NOT the vocabulary!)<br>token : authenticates the user<br>result : score</td>
+                <td style="padding: 5px">Liste des magasins</td>
+                <td style="padding: 5px">api/jsn/shops</td>
+                <td>GET</td>
             </tr>
         </table>
 

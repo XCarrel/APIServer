@@ -1,0 +1,467 @@
+# Logfile created on 2019-06-02 18:14:59 +0200 by logger.rb/54362
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-06-02 18:14:59 +0200 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [d590530e] Running /usr/bin/env mkdir -p /tmp as swisscenter_username@projectname.mycpnv.ch
+ DEBUG [d590530e] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-06-02 18:18:14 +0200 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [fd506ae4] Running /usr/bin/env mkdir -p /tmp as apiserver@apiserver.mycpnv.ch
+ DEBUG [fd506ae4] Command: /usr/bin/env mkdir -p /tmp
+  INFO [fd506ae4] Finished in 0.507 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-apiserver.mycpnv.ch-production-Xavier.sh 0.0%
+  INFO Uploading /tmp/git-ssh-apiserver.mycpnv.ch-production-Xavier.sh 100.0%
+  INFO [169f7385] Running /usr/bin/env chmod 700 /tmp/git-ssh-apiserver.mycpnv.ch-production-Xavier.sh as apiserver@apiserver.mycpnv.ch
+ DEBUG [169f7385] Command: /usr/bin/env chmod 700 /tmp/git-ssh-apiserver.mycpnv.ch-production-Xavier.sh
+  INFO [169f7385] Finished in 0.110 seconds with exit status 0 (successful).
+  INFO [22432d27] Running /usr/bin/env git ls-remote git@github.com:XCarrel/APIServer.git HEAD as apiserver@apiserver.mycpnv.ch
+ DEBUG [22432d27] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-apiserver.mycpnv.ch-production-Xavier.sh" ; /usr/bin/env git ls-remote git@github.com:XCarrel/APIServer.git HEAD )
+ DEBUG [22432d27] 	Warning: Permanently added 'github.com,140.82.118.4' (RSA) to the list of known hosts.
+ DEBUG [22432d27] 	c78d61c53925a0ce9129c1b43e11184d99c3feb6	HEAD
+  INFO [22432d27] Finished in 1.548 seconds with exit status 0 (successful).
+  INFO [0fca978b] Running /usr/bin/env mkdir -p /home/apiserver/apiserver.mycpnv.ch/shared /home/apiserver/apiserver.mycpnv.ch/releases as apiserver@apiserver.mycpnv.ch
+ DEBUG [0fca978b] Command: /usr/bin/env mkdir -p /home/apiserver/apiserver.mycpnv.ch/shared /home/apiserver/apiserver.mycpnv.ch/releases
+  INFO [0fca978b] Finished in 0.107 seconds with exit status 0 (successful).
+  INFO [e9fdef7c] Running /usr/bin/env mkdir -p /home/apiserver/apiserver.mycpnv.ch/shared/storage/app /home/apiserver/apiserver.mycpnv.ch/shared/storage/framework/cache /home/apiserver/apiserver.mycpnv.ch/shared/storage/framework/sessions /home/apiserver/apiserver.mycpnv.ch/shared/storage/framework/views /home/apiserver/apiserver.mycpnv.ch/shared/storage/logs as apiserver@apiserver.mycpnv.ch
+ DEBUG [e9fdef7c] Command: /usr/bin/env mkdir -p /home/apiserver/apiserver.mycpnv.ch/shared/storage/app /home/apiserver/apiserver.mycpnv.ch/shared/storage/framework/cache /home/apiserver/apiserver.mycpnv.ch/shared/storage/framework/sessions /home/apiserver/apiserver.mycpnv.ch/shared/storage/framework/views /home/apiserver/apiserver.mycpnv.ch/shared/storage/logs
+  INFO [e9fdef7c] Finished in 0.099 seconds with exit status 0 (successful).
+ DEBUG [3404d145] Running [ -f /home/apiserver/apiserver.mycpnv.ch/current/REVISION ] as apiserver@apiserver.mycpnv.ch
+ DEBUG [3404d145] Command: [ -f /home/apiserver/apiserver.mycpnv.ch/current/REVISION ]
+ DEBUG [3404d145] Finished in 0.102 seconds with exit status 1 (failed).
+ DEBUG [af578443] Running if test ! -d /home/apiserver/apiserver.mycpnv.ch/shared; then echo "Directory does not exist '/home/apiserver/apiserver.mycpnv.ch/shared'" 1>&2; false; fi as apiserver@apiserver.mycpnv.ch
+ DEBUG [af578443] Command: if test ! -d /home/apiserver/apiserver.mycpnv.ch/shared; then echo "Directory does not exist '/home/apiserver/apiserver.mycpnv.ch/shared'" 1>&2; false; fi
+ DEBUG [af578443] Finished in 0.104 seconds with exit status 0 (successful).
+  INFO [cb2de634] Running /usr/bin/env mkdir -p storage/app as apiserver@apiserver.mycpnv.ch
+ DEBUG [cb2de634] Command: cd /home/apiserver/apiserver.mycpnv.ch/shared && /usr/bin/env mkdir -p storage/app
+  INFO [cb2de634] Finished in 0.122 seconds with exit status 0 (successful).
+ DEBUG [8190e92c] Running if test ! -d /home/apiserver/apiserver.mycpnv.ch/shared; then echo "Directory does not exist '/home/apiserver/apiserver.mycpnv.ch/shared'" 1>&2; false; fi as apiserver@apiserver.mycpnv.ch
+ DEBUG [8190e92c] Command: if test ! -d /home/apiserver/apiserver.mycpnv.ch/shared; then echo "Directory does not exist '/home/apiserver/apiserver.mycpnv.ch/shared'" 1>&2; false; fi
+ DEBUG [8190e92c] Finished in 0.101 seconds with exit status 0 (successful).
+  INFO [00f0a442] Running /usr/bin/env mkdir -p storage/framework/cache as apiserver@apiserver.mycpnv.ch
+ DEBUG [00f0a442] Command: cd /home/apiserver/apiserver.mycpnv.ch/shared && /usr/bin/env mkdir -p storage/framework/cache
+  INFO [00f0a442] Finished in 0.095 seconds with exit status 0 (successful).
+ DEBUG [cf2fd56f] Running if test ! -d /home/apiserver/apiserver.mycpnv.ch/shared; then echo "Directory does not exist '/home/apiserver/apiserver.mycpnv.ch/shared'" 1>&2; false; fi as apiserver@apiserver.mycpnv.ch
+ DEBUG [cf2fd56f] Command: if test ! -d /home/apiserver/apiserver.mycpnv.ch/shared; then echo "Directory does not exist '/home/apiserver/apiserver.mycpnv.ch/shared'" 1>&2; false; fi
+ DEBUG [cf2fd56f] Finished in 0.107 seconds with exit status 0 (successful).
+  INFO [54c0d974] Running /usr/bin/env mkdir -p storage/framework/sessions as apiserver@apiserver.mycpnv.ch
+ DEBUG [54c0d974] Command: cd /home/apiserver/apiserver.mycpnv.ch/shared && /usr/bin/env mkdir -p storage/framework/sessions
+  INFO [54c0d974] Finished in 0.097 seconds with exit status 0 (successful).
+ DEBUG [78970f4b] Running if test ! -d /home/apiserver/apiserver.mycpnv.ch/shared; then echo "Directory does not exist '/home/apiserver/apiserver.mycpnv.ch/shared'" 1>&2; false; fi as apiserver@apiserver.mycpnv.ch
+ DEBUG [78970f4b] Command: if test ! -d /home/apiserver/apiserver.mycpnv.ch/shared; then echo "Directory does not exist '/home/apiserver/apiserver.mycpnv.ch/shared'" 1>&2; false; fi
+ DEBUG [78970f4b] Finished in 0.100 seconds with exit status 0 (successful).
+  INFO [1d6bfbb4] Running /usr/bin/env mkdir -p storage/framework/views as apiserver@apiserver.mycpnv.ch
+ DEBUG [1d6bfbb4] Command: cd /home/apiserver/apiserver.mycpnv.ch/shared && /usr/bin/env mkdir -p storage/framework/views
+  INFO [1d6bfbb4] Finished in 0.102 seconds with exit status 0 (successful).
+ DEBUG [45686ab5] Running if test ! -d /home/apiserver/apiserver.mycpnv.ch/shared; then echo "Directory does not exist '/home/apiserver/apiserver.mycpnv.ch/shared'" 1>&2; false; fi as apiserver@apiserver.mycpnv.ch
+ DEBUG [45686ab5] Command: if test ! -d /home/apiserver/apiserver.mycpnv.ch/shared; then echo "Directory does not exist '/home/apiserver/apiserver.mycpnv.ch/shared'" 1>&2; false; fi
+ DEBUG [45686ab5] Finished in 0.103 seconds with exit status 0 (successful).
+  INFO [859d53d5] Running /usr/bin/env mkdir -p storage/logs as apiserver@apiserver.mycpnv.ch
+ DEBUG [859d53d5] Command: cd /home/apiserver/apiserver.mycpnv.ch/shared && /usr/bin/env mkdir -p storage/logs
+  INFO [859d53d5] Finished in 0.101 seconds with exit status 0 (successful).
+ DEBUG [5d530e00] Running [ -f /home/apiserver/apiserver.mycpnv.ch/repo/HEAD ] as apiserver@apiserver.mycpnv.ch
+ DEBUG [5d530e00] Command: [ -f /home/apiserver/apiserver.mycpnv.ch/repo/HEAD ]
+ DEBUG [5d530e00] Finished in 0.165 seconds with exit status 1 (failed).
+ DEBUG [59be3467] Running if test ! -d /home/apiserver/apiserver.mycpnv.ch; then echo "Directory does not exist '/home/apiserver/apiserver.mycpnv.ch'" 1>&2; false; fi as apiserver@apiserver.mycpnv.ch
+ DEBUG [59be3467] Command: if test ! -d /home/apiserver/apiserver.mycpnv.ch; then echo "Directory does not exist '/home/apiserver/apiserver.mycpnv.ch'" 1>&2; false; fi
+ DEBUG [59be3467] Finished in 0.152 seconds with exit status 0 (successful).
+  INFO [35cb52c4] Running /usr/bin/env git clone --mirror git@github.com:XCarrel/APIServer.git /home/apiserver/apiserver.mycpnv.ch/repo as apiserver@apiserver.mycpnv.ch
+ DEBUG [35cb52c4] Command: cd /home/apiserver/apiserver.mycpnv.ch && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-apiserver.mycpnv.ch-production-Xavier.sh" ; /usr/bin/env git clone --mirror git@github.com:XCarrel/APIServer.git /home/apiserver/apiserver.mycpnv.ch/repo )
+ DEBUG [35cb52c4] 	warning: templates not found /usr/share/git-core/templates
+ DEBUG [35cb52c4] 	Initialized empty Git repository in /home/apiserver/apiserver.mycpnv.ch/repo/
+  INFO [35cb52c4] Finished in 1.699 seconds with exit status 0 (successful).
+ DEBUG [199e8c65] Running if test ! -d /home/apiserver/apiserver.mycpnv.ch/repo; then echo "Directory does not exist '/home/apiserver/apiserver.mycpnv.ch/repo'" 1>&2; false; fi as apiserver@apiserver.mycpnv.ch
+ DEBUG [199e8c65] Command: if test ! -d /home/apiserver/apiserver.mycpnv.ch/repo; then echo "Directory does not exist '/home/apiserver/apiserver.mycpnv.ch/repo'" 1>&2; false; fi
+ DEBUG [199e8c65] Finished in 0.162 seconds with exit status 0 (successful).
+  INFO [96d31598] Running /usr/bin/env git remote set-url origin git@github.com:XCarrel/APIServer.git as apiserver@apiserver.mycpnv.ch
+ DEBUG [96d31598] Command: cd /home/apiserver/apiserver.mycpnv.ch/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-apiserver.mycpnv.ch-production-Xavier.sh" ; /usr/bin/env git remote set-url origin git@github.com:XCarrel/APIServer.git )
+  INFO [96d31598] Finished in 0.124 seconds with exit status 0 (successful).
+  INFO [763cc86c] Running /usr/bin/env git remote update --prune as apiserver@apiserver.mycpnv.ch
+ DEBUG [763cc86c] Command: cd /home/apiserver/apiserver.mycpnv.ch/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-apiserver.mycpnv.ch-production-Xavier.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [763cc86c] 	Fetching origin
+  INFO [763cc86c] Finished in 1.304 seconds with exit status 0 (successful).
+ DEBUG [c59f2c47] Running if test ! -d /home/apiserver/apiserver.mycpnv.ch/repo; then echo "Directory does not exist '/home/apiserver/apiserver.mycpnv.ch/repo'" 1>&2; false; fi as apiserver@apiserver.mycpnv.ch
+ DEBUG [c59f2c47] Command: if test ! -d /home/apiserver/apiserver.mycpnv.ch/repo; then echo "Directory does not exist '/home/apiserver/apiserver.mycpnv.ch/repo'" 1>&2; false; fi
+ DEBUG [c59f2c47] Finished in 0.101 seconds with exit status 0 (successful).
+  INFO [68ebf1cf] Running /usr/bin/env mkdir -p /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818 as apiserver@apiserver.mycpnv.ch
+ DEBUG [68ebf1cf] Command: cd /home/apiserver/apiserver.mycpnv.ch/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-apiserver.mycpnv.ch-production-Xavier.sh" ; /usr/bin/env mkdir -p /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818 )
+  INFO [68ebf1cf] Finished in 0.101 seconds with exit status 0 (successful).
+  INFO [e34fd04e] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818 as apiserver@apiserver.mycpnv.ch
+ DEBUG [e34fd04e] Command: cd /home/apiserver/apiserver.mycpnv.ch/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-apiserver.mycpnv.ch-production-Xavier.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818 )
+  INFO [e34fd04e] Finished in 0.149 seconds with exit status 0 (successful).
+ DEBUG [0ae21f90] Running if test ! -d /home/apiserver/apiserver.mycpnv.ch/repo; then echo "Directory does not exist '/home/apiserver/apiserver.mycpnv.ch/repo'" 1>&2; false; fi as apiserver@apiserver.mycpnv.ch
+ DEBUG [0ae21f90] Command: if test ! -d /home/apiserver/apiserver.mycpnv.ch/repo; then echo "Directory does not exist '/home/apiserver/apiserver.mycpnv.ch/repo'" 1>&2; false; fi
+ DEBUG [0ae21f90] Finished in 0.106 seconds with exit status 0 (successful).
+ DEBUG [34fd4575] Running /usr/bin/env git rev-list --max-count=1 master as apiserver@apiserver.mycpnv.ch
+ DEBUG [34fd4575] Command: cd /home/apiserver/apiserver.mycpnv.ch/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-apiserver.mycpnv.ch-production-Xavier.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [34fd4575] 	c78d61c53925a0ce9129c1b43e11184d99c3feb6
+ DEBUG [34fd4575] Finished in 0.111 seconds with exit status 0 (successful).
+ DEBUG [3b8fb7c1] Running if test ! -d /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818; then echo "Directory does not exist '/home/apiserver/apiserver.mycpnv.ch/releases/20190602161818'" 1>&2; false; fi as apiserver@apiserver.mycpnv.ch
+ DEBUG [3b8fb7c1] Command: if test ! -d /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818; then echo "Directory does not exist '/home/apiserver/apiserver.mycpnv.ch/releases/20190602161818'" 1>&2; false; fi
+ DEBUG [3b8fb7c1] Finished in 0.147 seconds with exit status 0 (successful).
+  INFO [6960768a] Running /usr/bin/env echo "c78d61c53925a0ce9129c1b43e11184d99c3feb6" > REVISION as apiserver@apiserver.mycpnv.ch
+ DEBUG [6960768a] Command: cd /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818 && /usr/bin/env echo "c78d61c53925a0ce9129c1b43e11184d99c3feb6" > REVISION
+  INFO [6960768a] Finished in 0.126 seconds with exit status 0 (successful).
+  INFO [99f757de] Running /usr/bin/env mkdir -p /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818/storage /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818/storage/framework as apiserver@apiserver.mycpnv.ch
+ DEBUG [99f757de] Command: /usr/bin/env mkdir -p /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818/storage /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818/storage/framework
+  INFO [99f757de] Finished in 0.115 seconds with exit status 0 (successful).
+ DEBUG [4c30a306] Running [ -L /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818/storage/app ] as apiserver@apiserver.mycpnv.ch
+ DEBUG [4c30a306] Command: [ -L /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818/storage/app ]
+ DEBUG [4c30a306] Finished in 0.103 seconds with exit status 1 (failed).
+ DEBUG [4cc71218] Running [ -d /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818/storage/app ] as apiserver@apiserver.mycpnv.ch
+ DEBUG [4cc71218] Command: [ -d /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818/storage/app ]
+ DEBUG [4cc71218] Finished in 0.100 seconds with exit status 0 (successful).
+  INFO [1ed90227] Running /usr/bin/env rm -rf /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818/storage/app as apiserver@apiserver.mycpnv.ch
+ DEBUG [1ed90227] Command: /usr/bin/env rm -rf /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818/storage/app
+  INFO [1ed90227] Finished in 0.106 seconds with exit status 0 (successful).
+  INFO [b99271ac] Running /usr/bin/env ln -s /home/apiserver/apiserver.mycpnv.ch/shared/storage/app /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818/storage/app as apiserver@apiserver.mycpnv.ch
+ DEBUG [b99271ac] Command: /usr/bin/env ln -s /home/apiserver/apiserver.mycpnv.ch/shared/storage/app /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818/storage/app
+  INFO [b99271ac] Finished in 0.108 seconds with exit status 0 (successful).
+ DEBUG [69536797] Running [ -L /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818/storage/framework/cache ] as apiserver@apiserver.mycpnv.ch
+ DEBUG [69536797] Command: [ -L /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818/storage/framework/cache ]
+ DEBUG [69536797] Finished in 0.100 seconds with exit status 1 (failed).
+ DEBUG [f6b4064b] Running [ -d /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818/storage/framework/cache ] as apiserver@apiserver.mycpnv.ch
+ DEBUG [f6b4064b] Command: [ -d /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818/storage/framework/cache ]
+ DEBUG [f6b4064b] Finished in 0.096 seconds with exit status 0 (successful).
+  INFO [7c9c4f14] Running /usr/bin/env rm -rf /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818/storage/framework/cache as apiserver@apiserver.mycpnv.ch
+ DEBUG [7c9c4f14] Command: /usr/bin/env rm -rf /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818/storage/framework/cache
+  INFO [7c9c4f14] Finished in 0.103 seconds with exit status 0 (successful).
+  INFO [bf2f11aa] Running /usr/bin/env ln -s /home/apiserver/apiserver.mycpnv.ch/shared/storage/framework/cache /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818/storage/framework/cache as apiserver@apiserver.mycpnv.ch
+ DEBUG [bf2f11aa] Command: /usr/bin/env ln -s /home/apiserver/apiserver.mycpnv.ch/shared/storage/framework/cache /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818/storage/framework/cache
+  INFO [bf2f11aa] Finished in 0.099 seconds with exit status 0 (successful).
+ DEBUG [babb5857] Running [ -L /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818/storage/framework/sessions ] as apiserver@apiserver.mycpnv.ch
+ DEBUG [babb5857] Command: [ -L /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818/storage/framework/sessions ]
+ DEBUG [babb5857] Finished in 0.115 seconds with exit status 1 (failed).
+ DEBUG [37536f42] Running [ -d /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818/storage/framework/sessions ] as apiserver@apiserver.mycpnv.ch
+ DEBUG [37536f42] Command: [ -d /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818/storage/framework/sessions ]
+ DEBUG [37536f42] Finished in 0.116 seconds with exit status 0 (successful).
+  INFO [ba3ab7a2] Running /usr/bin/env rm -rf /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818/storage/framework/sessions as apiserver@apiserver.mycpnv.ch
+ DEBUG [ba3ab7a2] Command: /usr/bin/env rm -rf /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818/storage/framework/sessions
+  INFO [ba3ab7a2] Finished in 0.115 seconds with exit status 0 (successful).
+  INFO [a62f7b72] Running /usr/bin/env ln -s /home/apiserver/apiserver.mycpnv.ch/shared/storage/framework/sessions /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818/storage/framework/sessions as apiserver@apiserver.mycpnv.ch
+ DEBUG [a62f7b72] Command: /usr/bin/env ln -s /home/apiserver/apiserver.mycpnv.ch/shared/storage/framework/sessions /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818/storage/framework/sessions
+  INFO [a62f7b72] Finished in 0.102 seconds with exit status 0 (successful).
+ DEBUG [f35d47ec] Running [ -L /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818/storage/framework/views ] as apiserver@apiserver.mycpnv.ch
+ DEBUG [f35d47ec] Command: [ -L /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818/storage/framework/views ]
+ DEBUG [f35d47ec] Finished in 0.132 seconds with exit status 1 (failed).
+ DEBUG [99d60cbb] Running [ -d /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818/storage/framework/views ] as apiserver@apiserver.mycpnv.ch
+ DEBUG [99d60cbb] Command: [ -d /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818/storage/framework/views ]
+ DEBUG [99d60cbb] Finished in 0.184 seconds with exit status 0 (successful).
+  INFO [118e7205] Running /usr/bin/env rm -rf /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818/storage/framework/views as apiserver@apiserver.mycpnv.ch
+ DEBUG [118e7205] Command: /usr/bin/env rm -rf /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818/storage/framework/views
+  INFO [118e7205] Finished in 0.103 seconds with exit status 0 (successful).
+  INFO [f651c4d2] Running /usr/bin/env ln -s /home/apiserver/apiserver.mycpnv.ch/shared/storage/framework/views /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818/storage/framework/views as apiserver@apiserver.mycpnv.ch
+ DEBUG [f651c4d2] Command: /usr/bin/env ln -s /home/apiserver/apiserver.mycpnv.ch/shared/storage/framework/views /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818/storage/framework/views
+  INFO [f651c4d2] Finished in 0.098 seconds with exit status 0 (successful).
+ DEBUG [ad1ac933] Running [ -L /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818/storage/logs ] as apiserver@apiserver.mycpnv.ch
+ DEBUG [ad1ac933] Command: [ -L /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818/storage/logs ]
+ DEBUG [ad1ac933] Finished in 0.101 seconds with exit status 1 (failed).
+ DEBUG [016a64a9] Running [ -d /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818/storage/logs ] as apiserver@apiserver.mycpnv.ch
+ DEBUG [016a64a9] Command: [ -d /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818/storage/logs ]
+ DEBUG [016a64a9] Finished in 0.127 seconds with exit status 0 (successful).
+  INFO [31504645] Running /usr/bin/env rm -rf /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818/storage/logs as apiserver@apiserver.mycpnv.ch
+ DEBUG [31504645] Command: /usr/bin/env rm -rf /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818/storage/logs
+  INFO [31504645] Finished in 0.101 seconds with exit status 0 (successful).
+  INFO [78fd9ea4] Running /usr/bin/env ln -s /home/apiserver/apiserver.mycpnv.ch/shared/storage/logs /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818/storage/logs as apiserver@apiserver.mycpnv.ch
+ DEBUG [78fd9ea4] Command: /usr/bin/env ln -s /home/apiserver/apiserver.mycpnv.ch/shared/storage/logs /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818/storage/logs
+  INFO [78fd9ea4] Finished in 0.100 seconds with exit status 0 (successful).
+  INFO [fec861a8] Running ls /home/apiserver/.data/apiserver.mycpnv.ch_php* 2>/dev/null | sed -E 's/.+(php[[:digit:]]+)$/\1/' >/tmp/.php-cli-version as apiserver@apiserver.mycpnv.ch
+ DEBUG [fec861a8] Command: ls /home/apiserver/.data/apiserver.mycpnv.ch_php* 2>/dev/null | sed -E 's/.+(php[[:digit:]]+)$/\1/' >/tmp/.php-cli-version
+  INFO [fec861a8] Finished in 0.119 seconds with exit status 0 (successful).
+ DEBUG [7b55408d] Running if test ! -d /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818; then echo "Directory does not exist '/home/apiserver/apiserver.mycpnv.ch/releases/20190602161818'" 1>&2; false; fi as apiserver@apiserver.mycpnv.ch
+ DEBUG [7b55408d] Command: if test ! -d /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818; then echo "Directory does not exist '/home/apiserver/apiserver.mycpnv.ch/releases/20190602161818'" 1>&2; false; fi
+ DEBUG [7b55408d] Finished in 0.099 seconds with exit status 0 (successful).
+  INFO [2532915c] Running php -d allow_url_fopen=true /home/apiserver/apiserver.mycpnv.ch/shared/composer install --no-dev --prefer-dist --no-interaction --optimize-autoloader as apiserver@apiserver.mycpnv.ch
+ DEBUG [2532915c] Command: cd /home/apiserver/apiserver.mycpnv.ch/releases/20190602161818 && php -d allow_url_fopen=true /home/apiserver/apiserver.mycpnv.ch/shared/composer install --no-dev --prefer-dist --no-interaction --optimize-autoloader
+ DEBUG [2532915c] 	Loading composer repositories with package information
+ DEBUG [2532915c] 	Installing dependencies from lock file
+ DEBUG [2532915c] 	Your requirements could not be resolved to an installable set of packages.
+
+  Problem 1
+    - This package requires php ^7.1.3 but your HHVM version does not satisfy that requirement.
+  Problem 2
+    - Installation request for doctrine/inflector v1.3.0 -> satisfiable by doctrine/inflector[v1.3.0].
+    - doctrine/inflector v1.3.0 requires php ^7.1 -> your PHP version (7.0.32) does not satisfy that requirement.
+  Problem 3
+    - Installation request for laravel/framework v5.8.19 -> satisfiable by laravel/framework[v5.8.19].
+    - laravel/framework v5.8.19 requires php ^7.1.3 -> your PHP version (7.0.32) does not satisfy that requirement.
+  Problem 4
+    - Installation request for nesbot/carbon 2.19.0 -> satisfiable by nesbot/carbon[2.19.0].
+    - nesbot/carbon 2.19.0 requires php ^7.1.8 || ^8.0 -> your PHP version (7.0.32) does not satisfy that requirement.
+  Problem 5
+    - Installation request for symfony/console v4.3.0 -> satisfiable by symfony/console[v4.3.0].
+    - symfony/console v4.3.0 requires php ^7.1.3 -> your PHP version (7.0.32) does not satisfy that requirement.
+  Problem 6
+    - Installation request for symfony/css-selector v4.3.0 -> satisfiable by symfony/css-selector[v4.3.0].
+    - symfony/css-selector v4.3.0 requires php ^7.1.3 -> your PHP version (7.0.32) does not satisfy that requirement.
+  Problem 7
+    - Installation request for symfony/debug v4.3.0 -> satisfiable by symfony/debug[v4.3.0].
+    - symfony/debug v4.3.0 requires php ^7.1.3 -> your PHP version (7.0.32) does not satisfy that requirement.
+  Problem 8
+    - Installation request for symfony/event-dispatcher v4.3.0 -> satisfiable by symfony/event-dispatcher[v4.3.0].
+    - symfony/event-dispatcher v4.3.0 requires php ^7.1.3 -> your PHP version (7.0.32) does not satisfy that requirement.
+  Problem 9
+    - Installation request for symfony/event-dispatcher-contracts v1.1.1 -> satisfiable by symfony/event-dispatcher-contracts[v1.1.1].
+    - symfony/event-dispatcher-contracts v1.1.1 requires php ^7.1.3 -> your PHP version (7.0.32) does not satisfy that requirement.
+  Problem 10
+    - Installation request for symfony/finder v4.3.0 -> satisfiable by symfony/finder[v4.3.0].
+    - symfony/finder v4.3.0 requires php ^7.1.3 -> your PHP version (7.0.32) does not satisfy that requirement.
+  Problem 11
+    - Installation request for symfony/http-foundation v4.3.0 -> satisfiable by symfony/http-foundation[v4.3.0].
+    - symfony/http-foundation v4.3.0 requires php ^7.1.3 -> your PHP version (7.0.32) does not satisfy that requirement.
+  Problem 12
+    - Installation request for symfony/http-kernel v4.3.0 -> satisfiable by symfony/http-kernel[v4.3.0].
+    - symfony/http-kernel v4.3.0 requires php ^7.1.3 -> your PHP version (7.0.32) does not satisfy that requirement.
+  Problem 13
+    - Installation request for symfony/mime v4.3.0 -> satisfiable by symfony/mime[v4.3.0].
+    - symfony/mime v4.3.0 requires php ^7.1.3 -> your PHP version (7.0.32) does not satisfy that requirement.
+  Problem 14
+    - Installation request for symfony/process v4.3.0 -> satisfiable by symfony/process[v4.3.0].
+    - symfony/process v4.3.0 requires php ^7.1.3 -> your PHP version (7.0.32) does not satisfy that requirement.
+  Problem 15
+    - Installation request for symfony/routing v4.3.0 -> satisfiable by symfony/routing[v4.3.0].
+    - symfony/routing v4.3.0 requires php ^7.1.3 -> your PHP version (7.0.32) does not satisfy that requirement.
+  Problem 16
+    - Installation request for symfony/service-contracts v1.1.2 -> satisfiable by symfony/service-contracts[v1.1.2].
+    - symfony/service-contracts v1.1.2 requires php ^7.1.3 -> your PHP version (7.0.32) does not satisfy that requirement.
+  Problem 17
+    - Installation request for symfony/translation v4.3.0 -> satisfiable by symfony/translation[v4.3.0].
+    - symfony/translation v4.3.0 requires php ^7.1.3 -> your PHP version (7.0.32) does not satisfy that requirement.
+  Problem 18
+    - Installation request for symfony/translation-contracts v1.1.2 -> satisfiable by symfony/translation-contracts[v1.1.2].
+    - symfony/translation-contracts v1.1.2 requires php ^7.1.3 -> your PHP version (7.0.32) does not satisfy that requirement.
+  Problem 19
+    - Installation request for symfony/var-dumper v4.3.0 -> satisfiable by symfony/var-dumper[v4.3.0].
+    - symfony/var-dumper v4.3.0 requires php ^7.1.3 -> your PHP version (7.0.32) does not satisfy that requirement.
+  Problem 20
+    - laravel/framework v5.8.19 requires php ^7.1.3 -> your PHP version (7.0.32) does not satisfy that requirement.
+    - laravel/tinker v1.0.8 requires illuminate/console ~5.1 -> satisfiable by laravel/framework[v5.8.19].
+    - Installation request for laravel/tinker v1.0.8 -> satisfiable by laravel/tinker[v1.0.8].
+
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-06-03 07:53:14 +0200 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [2b32c6d7] Running /usr/bin/env mkdir -p /tmp as apiserver@apiserver.mycpnv.ch
+ DEBUG [2b32c6d7] Command: /usr/bin/env mkdir -p /tmp
+  INFO [2b32c6d7] Finished in 0.209 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-apiserver.mycpnv.ch-production-Xavier.sh 0.0%
+  INFO Uploading /tmp/git-ssh-apiserver.mycpnv.ch-production-Xavier.sh 100.0%
+  INFO [e77f9ba7] Running /usr/bin/env chmod 700 /tmp/git-ssh-apiserver.mycpnv.ch-production-Xavier.sh as apiserver@apiserver.mycpnv.ch
+ DEBUG [e77f9ba7] Command: /usr/bin/env chmod 700 /tmp/git-ssh-apiserver.mycpnv.ch-production-Xavier.sh
+  INFO [e77f9ba7] Finished in 0.069 seconds with exit status 0 (successful).
+  INFO [a057f859] Running /usr/bin/env git ls-remote git@github.com:XCarrel/APIServer.git HEAD as apiserver@apiserver.mycpnv.ch
+ DEBUG [a057f859] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-apiserver.mycpnv.ch-production-Xavier.sh" ; /usr/bin/env git ls-remote git@github.com:XCarrel/APIServer.git HEAD )
+ DEBUG [a057f859] 	Warning: Permanently added the RSA host key for IP address '140.82.118.3' to the list of known hosts.
+ DEBUG [a057f859] 	c78d61c53925a0ce9129c1b43e11184d99c3feb6	HEAD
+  INFO [a057f859] Finished in 1.366 seconds with exit status 0 (successful).
+  INFO [84deb6c4] Running /usr/bin/env mkdir -p /home/apiserver/apiserver.mycpnv.ch/shared /home/apiserver/apiserver.mycpnv.ch/releases as apiserver@apiserver.mycpnv.ch
+ DEBUG [84deb6c4] Command: /usr/bin/env mkdir -p /home/apiserver/apiserver.mycpnv.ch/shared /home/apiserver/apiserver.mycpnv.ch/releases
+  INFO [84deb6c4] Finished in 0.063 seconds with exit status 0 (successful).
+  INFO [83968a61] Running /usr/bin/env mkdir -p /home/apiserver/apiserver.mycpnv.ch/shared/storage/app /home/apiserver/apiserver.mycpnv.ch/shared/storage/framework/cache /home/apiserver/apiserver.mycpnv.ch/shared/storage/framework/sessions /home/apiserver/apiserver.mycpnv.ch/shared/storage/framework/views /home/apiserver/apiserver.mycpnv.ch/shared/storage/logs as apiserver@apiserver.mycpnv.ch
+ DEBUG [83968a61] Command: /usr/bin/env mkdir -p /home/apiserver/apiserver.mycpnv.ch/shared/storage/app /home/apiserver/apiserver.mycpnv.ch/shared/storage/framework/cache /home/apiserver/apiserver.mycpnv.ch/shared/storage/framework/sessions /home/apiserver/apiserver.mycpnv.ch/shared/storage/framework/views /home/apiserver/apiserver.mycpnv.ch/shared/storage/logs
+  INFO [83968a61] Finished in 0.064 seconds with exit status 0 (successful).
+ DEBUG [3b86c9ec] Running [ -f /home/apiserver/apiserver.mycpnv.ch/current/REVISION ] as apiserver@apiserver.mycpnv.ch
+ DEBUG [3b86c9ec] Command: [ -f /home/apiserver/apiserver.mycpnv.ch/current/REVISION ]
+ DEBUG [3b86c9ec] Finished in 0.061 seconds with exit status 1 (failed).
+ DEBUG [c79dbd2f] Running if test ! -d /home/apiserver/apiserver.mycpnv.ch/shared; then echo "Directory does not exist '/home/apiserver/apiserver.mycpnv.ch/shared'" 1>&2; false; fi as apiserver@apiserver.mycpnv.ch
+ DEBUG [c79dbd2f] Command: if test ! -d /home/apiserver/apiserver.mycpnv.ch/shared; then echo "Directory does not exist '/home/apiserver/apiserver.mycpnv.ch/shared'" 1>&2; false; fi
+ DEBUG [c79dbd2f] Finished in 0.061 seconds with exit status 0 (successful).
+  INFO [0230e7b8] Running /usr/bin/env mkdir -p storage/app as apiserver@apiserver.mycpnv.ch
+ DEBUG [0230e7b8] Command: cd /home/apiserver/apiserver.mycpnv.ch/shared && /usr/bin/env mkdir -p storage/app
+  INFO [0230e7b8] Finished in 0.070 seconds with exit status 0 (successful).
+ DEBUG [d4ae616f] Running if test ! -d /home/apiserver/apiserver.mycpnv.ch/shared; then echo "Directory does not exist '/home/apiserver/apiserver.mycpnv.ch/shared'" 1>&2; false; fi as apiserver@apiserver.mycpnv.ch
+ DEBUG [d4ae616f] Command: if test ! -d /home/apiserver/apiserver.mycpnv.ch/shared; then echo "Directory does not exist '/home/apiserver/apiserver.mycpnv.ch/shared'" 1>&2; false; fi
+ DEBUG [d4ae616f] Finished in 0.066 seconds with exit status 0 (successful).
+  INFO [278744f3] Running /usr/bin/env mkdir -p storage/framework/cache as apiserver@apiserver.mycpnv.ch
+ DEBUG [278744f3] Command: cd /home/apiserver/apiserver.mycpnv.ch/shared && /usr/bin/env mkdir -p storage/framework/cache
+  INFO [278744f3] Finished in 0.074 seconds with exit status 0 (successful).
+ DEBUG [c2c6f5be] Running if test ! -d /home/apiserver/apiserver.mycpnv.ch/shared; then echo "Directory does not exist '/home/apiserver/apiserver.mycpnv.ch/shared'" 1>&2; false; fi as apiserver@apiserver.mycpnv.ch
+ DEBUG [c2c6f5be] Command: if test ! -d /home/apiserver/apiserver.mycpnv.ch/shared; then echo "Directory does not exist '/home/apiserver/apiserver.mycpnv.ch/shared'" 1>&2; false; fi
+ DEBUG [c2c6f5be] Finished in 0.062 seconds with exit status 0 (successful).
+  INFO [8c121f08] Running /usr/bin/env mkdir -p storage/framework/sessions as apiserver@apiserver.mycpnv.ch
+ DEBUG [8c121f08] Command: cd /home/apiserver/apiserver.mycpnv.ch/shared && /usr/bin/env mkdir -p storage/framework/sessions
+  INFO [8c121f08] Finished in 0.065 seconds with exit status 0 (successful).
+ DEBUG [131abf8a] Running if test ! -d /home/apiserver/apiserver.mycpnv.ch/shared; then echo "Directory does not exist '/home/apiserver/apiserver.mycpnv.ch/shared'" 1>&2; false; fi as apiserver@apiserver.mycpnv.ch
+ DEBUG [131abf8a] Command: if test ! -d /home/apiserver/apiserver.mycpnv.ch/shared; then echo "Directory does not exist '/home/apiserver/apiserver.mycpnv.ch/shared'" 1>&2; false; fi
+ DEBUG [131abf8a] Finished in 0.062 seconds with exit status 0 (successful).
+  INFO [e2c353d4] Running /usr/bin/env mkdir -p storage/framework/views as apiserver@apiserver.mycpnv.ch
+ DEBUG [e2c353d4] Command: cd /home/apiserver/apiserver.mycpnv.ch/shared && /usr/bin/env mkdir -p storage/framework/views
+  INFO [e2c353d4] Finished in 0.063 seconds with exit status 0 (successful).
+ DEBUG [04631e6b] Running if test ! -d /home/apiserver/apiserver.mycpnv.ch/shared; then echo "Directory does not exist '/home/apiserver/apiserver.mycpnv.ch/shared'" 1>&2; false; fi as apiserver@apiserver.mycpnv.ch
+ DEBUG [04631e6b] Command: if test ! -d /home/apiserver/apiserver.mycpnv.ch/shared; then echo "Directory does not exist '/home/apiserver/apiserver.mycpnv.ch/shared'" 1>&2; false; fi
+ DEBUG [04631e6b] Finished in 0.065 seconds with exit status 0 (successful).
+  INFO [3f49f1a3] Running /usr/bin/env mkdir -p storage/logs as apiserver@apiserver.mycpnv.ch
+ DEBUG [3f49f1a3] Command: cd /home/apiserver/apiserver.mycpnv.ch/shared && /usr/bin/env mkdir -p storage/logs
+  INFO [3f49f1a3] Finished in 0.066 seconds with exit status 0 (successful).
+ DEBUG [288fa03a] Running [ -f /home/apiserver/apiserver.mycpnv.ch/repo/HEAD ] as apiserver@apiserver.mycpnv.ch
+ DEBUG [288fa03a] Command: [ -f /home/apiserver/apiserver.mycpnv.ch/repo/HEAD ]
+ DEBUG [288fa03a] Finished in 0.063 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/apiserver/apiserver.mycpnv.ch/repo
+ DEBUG [66e9c68f] Running if test ! -d /home/apiserver/apiserver.mycpnv.ch/repo; then echo "Directory does not exist '/home/apiserver/apiserver.mycpnv.ch/repo'" 1>&2; false; fi as apiserver@apiserver.mycpnv.ch
+ DEBUG [66e9c68f] Command: if test ! -d /home/apiserver/apiserver.mycpnv.ch/repo; then echo "Directory does not exist '/home/apiserver/apiserver.mycpnv.ch/repo'" 1>&2; false; fi
+ DEBUG [66e9c68f] Finished in 0.064 seconds with exit status 0 (successful).
+  INFO [c4ac1d7b] Running /usr/bin/env git remote set-url origin git@github.com:XCarrel/APIServer.git as apiserver@apiserver.mycpnv.ch
+ DEBUG [c4ac1d7b] Command: cd /home/apiserver/apiserver.mycpnv.ch/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-apiserver.mycpnv.ch-production-Xavier.sh" ; /usr/bin/env git remote set-url origin git@github.com:XCarrel/APIServer.git )
+  INFO [c4ac1d7b] Finished in 0.072 seconds with exit status 0 (successful).
+  INFO [aeeef508] Running /usr/bin/env git remote update --prune as apiserver@apiserver.mycpnv.ch
+ DEBUG [aeeef508] Command: cd /home/apiserver/apiserver.mycpnv.ch/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-apiserver.mycpnv.ch-production-Xavier.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [aeeef508] 	Fetching origin
+  INFO [aeeef508] Finished in 1.333 seconds with exit status 0 (successful).
+ DEBUG [d5ce31c5] Running if test ! -d /home/apiserver/apiserver.mycpnv.ch/repo; then echo "Directory does not exist '/home/apiserver/apiserver.mycpnv.ch/repo'" 1>&2; false; fi as apiserver@apiserver.mycpnv.ch
+ DEBUG [d5ce31c5] Command: if test ! -d /home/apiserver/apiserver.mycpnv.ch/repo; then echo "Directory does not exist '/home/apiserver/apiserver.mycpnv.ch/repo'" 1>&2; false; fi
+ DEBUG [d5ce31c5] Finished in 0.061 seconds with exit status 0 (successful).
+  INFO [8556b129] Running /usr/bin/env mkdir -p /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316 as apiserver@apiserver.mycpnv.ch
+ DEBUG [8556b129] Command: cd /home/apiserver/apiserver.mycpnv.ch/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-apiserver.mycpnv.ch-production-Xavier.sh" ; /usr/bin/env mkdir -p /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316 )
+  INFO [8556b129] Finished in 0.064 seconds with exit status 0 (successful).
+  INFO [53e69cb5] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316 as apiserver@apiserver.mycpnv.ch
+ DEBUG [53e69cb5] Command: cd /home/apiserver/apiserver.mycpnv.ch/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-apiserver.mycpnv.ch-production-Xavier.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316 )
+  INFO [53e69cb5] Finished in 0.103 seconds with exit status 0 (successful).
+ DEBUG [c4088e10] Running if test ! -d /home/apiserver/apiserver.mycpnv.ch/repo; then echo "Directory does not exist '/home/apiserver/apiserver.mycpnv.ch/repo'" 1>&2; false; fi as apiserver@apiserver.mycpnv.ch
+ DEBUG [c4088e10] Command: if test ! -d /home/apiserver/apiserver.mycpnv.ch/repo; then echo "Directory does not exist '/home/apiserver/apiserver.mycpnv.ch/repo'" 1>&2; false; fi
+ DEBUG [c4088e10] Finished in 0.062 seconds with exit status 0 (successful).
+ DEBUG [78e46b3b] Running /usr/bin/env git rev-list --max-count=1 master as apiserver@apiserver.mycpnv.ch
+ DEBUG [78e46b3b] Command: cd /home/apiserver/apiserver.mycpnv.ch/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-apiserver.mycpnv.ch-production-Xavier.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [78e46b3b] 	c78d61c53925a0ce9129c1b43e11184d99c3feb6
+ DEBUG [78e46b3b] Finished in 0.068 seconds with exit status 0 (successful).
+ DEBUG [42053f2d] Running if test ! -d /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316; then echo "Directory does not exist '/home/apiserver/apiserver.mycpnv.ch/releases/20190603055316'" 1>&2; false; fi as apiserver@apiserver.mycpnv.ch
+ DEBUG [42053f2d] Command: if test ! -d /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316; then echo "Directory does not exist '/home/apiserver/apiserver.mycpnv.ch/releases/20190603055316'" 1>&2; false; fi
+ DEBUG [42053f2d] Finished in 0.063 seconds with exit status 0 (successful).
+  INFO [d9423c30] Running /usr/bin/env echo "c78d61c53925a0ce9129c1b43e11184d99c3feb6" > REVISION as apiserver@apiserver.mycpnv.ch
+ DEBUG [d9423c30] Command: cd /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316 && /usr/bin/env echo "c78d61c53925a0ce9129c1b43e11184d99c3feb6" > REVISION
+  INFO [d9423c30] Finished in 0.066 seconds with exit status 0 (successful).
+  INFO [259a7b2f] Running /usr/bin/env mkdir -p /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316/storage /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316/storage/framework as apiserver@apiserver.mycpnv.ch
+ DEBUG [259a7b2f] Command: /usr/bin/env mkdir -p /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316/storage /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316/storage/framework
+  INFO [259a7b2f] Finished in 0.063 seconds with exit status 0 (successful).
+ DEBUG [5b9b3a9e] Running [ -L /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316/storage/app ] as apiserver@apiserver.mycpnv.ch
+ DEBUG [5b9b3a9e] Command: [ -L /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316/storage/app ]
+ DEBUG [5b9b3a9e] Finished in 0.061 seconds with exit status 1 (failed).
+ DEBUG [f464c7d0] Running [ -d /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316/storage/app ] as apiserver@apiserver.mycpnv.ch
+ DEBUG [f464c7d0] Command: [ -d /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316/storage/app ]
+ DEBUG [f464c7d0] Finished in 0.063 seconds with exit status 0 (successful).
+  INFO [4cbb57b4] Running /usr/bin/env rm -rf /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316/storage/app as apiserver@apiserver.mycpnv.ch
+ DEBUG [4cbb57b4] Command: /usr/bin/env rm -rf /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316/storage/app
+  INFO [4cbb57b4] Finished in 0.064 seconds with exit status 0 (successful).
+  INFO [2c422930] Running /usr/bin/env ln -s /home/apiserver/apiserver.mycpnv.ch/shared/storage/app /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316/storage/app as apiserver@apiserver.mycpnv.ch
+ DEBUG [2c422930] Command: /usr/bin/env ln -s /home/apiserver/apiserver.mycpnv.ch/shared/storage/app /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316/storage/app
+  INFO [2c422930] Finished in 0.063 seconds with exit status 0 (successful).
+ DEBUG [3c75e9bb] Running [ -L /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316/storage/framework/cache ] as apiserver@apiserver.mycpnv.ch
+ DEBUG [3c75e9bb] Command: [ -L /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316/storage/framework/cache ]
+ DEBUG [3c75e9bb] Finished in 0.062 seconds with exit status 1 (failed).
+ DEBUG [34b50066] Running [ -d /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316/storage/framework/cache ] as apiserver@apiserver.mycpnv.ch
+ DEBUG [34b50066] Command: [ -d /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316/storage/framework/cache ]
+ DEBUG [34b50066] Finished in 0.063 seconds with exit status 0 (successful).
+  INFO [23a33166] Running /usr/bin/env rm -rf /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316/storage/framework/cache as apiserver@apiserver.mycpnv.ch
+ DEBUG [23a33166] Command: /usr/bin/env rm -rf /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316/storage/framework/cache
+  INFO [23a33166] Finished in 0.063 seconds with exit status 0 (successful).
+  INFO [51267258] Running /usr/bin/env ln -s /home/apiserver/apiserver.mycpnv.ch/shared/storage/framework/cache /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316/storage/framework/cache as apiserver@apiserver.mycpnv.ch
+ DEBUG [51267258] Command: /usr/bin/env ln -s /home/apiserver/apiserver.mycpnv.ch/shared/storage/framework/cache /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316/storage/framework/cache
+  INFO [51267258] Finished in 0.063 seconds with exit status 0 (successful).
+ DEBUG [323bcf1c] Running [ -L /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316/storage/framework/sessions ] as apiserver@apiserver.mycpnv.ch
+ DEBUG [323bcf1c] Command: [ -L /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316/storage/framework/sessions ]
+ DEBUG [323bcf1c] Finished in 0.064 seconds with exit status 1 (failed).
+ DEBUG [9d824682] Running [ -d /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316/storage/framework/sessions ] as apiserver@apiserver.mycpnv.ch
+ DEBUG [9d824682] Command: [ -d /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316/storage/framework/sessions ]
+ DEBUG [9d824682] Finished in 0.065 seconds with exit status 0 (successful).
+  INFO [1d321be1] Running /usr/bin/env rm -rf /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316/storage/framework/sessions as apiserver@apiserver.mycpnv.ch
+ DEBUG [1d321be1] Command: /usr/bin/env rm -rf /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316/storage/framework/sessions
+  INFO [1d321be1] Finished in 0.062 seconds with exit status 0 (successful).
+  INFO [0c00c74f] Running /usr/bin/env ln -s /home/apiserver/apiserver.mycpnv.ch/shared/storage/framework/sessions /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316/storage/framework/sessions as apiserver@apiserver.mycpnv.ch
+ DEBUG [0c00c74f] Command: /usr/bin/env ln -s /home/apiserver/apiserver.mycpnv.ch/shared/storage/framework/sessions /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316/storage/framework/sessions
+  INFO [0c00c74f] Finished in 0.065 seconds with exit status 0 (successful).
+ DEBUG [b7c521fb] Running [ -L /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316/storage/framework/views ] as apiserver@apiserver.mycpnv.ch
+ DEBUG [b7c521fb] Command: [ -L /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316/storage/framework/views ]
+ DEBUG [b7c521fb] Finished in 0.061 seconds with exit status 1 (failed).
+ DEBUG [297a4c4e] Running [ -d /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316/storage/framework/views ] as apiserver@apiserver.mycpnv.ch
+ DEBUG [297a4c4e] Command: [ -d /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316/storage/framework/views ]
+ DEBUG [297a4c4e] Finished in 0.064 seconds with exit status 0 (successful).
+  INFO [8bb19958] Running /usr/bin/env rm -rf /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316/storage/framework/views as apiserver@apiserver.mycpnv.ch
+ DEBUG [8bb19958] Command: /usr/bin/env rm -rf /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316/storage/framework/views
+  INFO [8bb19958] Finished in 0.062 seconds with exit status 0 (successful).
+  INFO [6cd922c3] Running /usr/bin/env ln -s /home/apiserver/apiserver.mycpnv.ch/shared/storage/framework/views /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316/storage/framework/views as apiserver@apiserver.mycpnv.ch
+ DEBUG [6cd922c3] Command: /usr/bin/env ln -s /home/apiserver/apiserver.mycpnv.ch/shared/storage/framework/views /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316/storage/framework/views
+  INFO [6cd922c3] Finished in 0.063 seconds with exit status 0 (successful).
+ DEBUG [c24f7f06] Running [ -L /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316/storage/logs ] as apiserver@apiserver.mycpnv.ch
+ DEBUG [c24f7f06] Command: [ -L /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316/storage/logs ]
+ DEBUG [c24f7f06] Finished in 0.069 seconds with exit status 1 (failed).
+ DEBUG [b210d23a] Running [ -d /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316/storage/logs ] as apiserver@apiserver.mycpnv.ch
+ DEBUG [b210d23a] Command: [ -d /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316/storage/logs ]
+ DEBUG [b210d23a] Finished in 0.063 seconds with exit status 0 (successful).
+  INFO [63c3aaa1] Running /usr/bin/env rm -rf /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316/storage/logs as apiserver@apiserver.mycpnv.ch
+ DEBUG [63c3aaa1] Command: /usr/bin/env rm -rf /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316/storage/logs
+  INFO [63c3aaa1] Finished in 0.066 seconds with exit status 0 (successful).
+  INFO [defc397f] Running /usr/bin/env ln -s /home/apiserver/apiserver.mycpnv.ch/shared/storage/logs /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316/storage/logs as apiserver@apiserver.mycpnv.ch
+ DEBUG [defc397f] Command: /usr/bin/env ln -s /home/apiserver/apiserver.mycpnv.ch/shared/storage/logs /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316/storage/logs
+  INFO [defc397f] Finished in 0.062 seconds with exit status 0 (successful).
+  INFO [54bc9d21] Running ls /home/apiserver/.data/apiserver.mycpnv.ch_php* 2>/dev/null | sed -E 's/.+(php[[:digit:]]+)$/\1/' >/tmp/.php-cli-version as apiserver@apiserver.mycpnv.ch
+ DEBUG [54bc9d21] Command: ls /home/apiserver/.data/apiserver.mycpnv.ch_php* 2>/dev/null | sed -E 's/.+(php[[:digit:]]+)$/\1/' >/tmp/.php-cli-version
+  INFO [54bc9d21] Finished in 0.064 seconds with exit status 0 (successful).
+ DEBUG [76704ae6] Running if test ! -d /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316; then echo "Directory does not exist '/home/apiserver/apiserver.mycpnv.ch/releases/20190603055316'" 1>&2; false; fi as apiserver@apiserver.mycpnv.ch
+ DEBUG [76704ae6] Command: if test ! -d /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316; then echo "Directory does not exist '/home/apiserver/apiserver.mycpnv.ch/releases/20190603055316'" 1>&2; false; fi
+ DEBUG [76704ae6] Finished in 0.061 seconds with exit status 0 (successful).
+  INFO [4692e6a2] Running php -d allow_url_fopen=true /home/apiserver/apiserver.mycpnv.ch/shared/composer install --no-dev --prefer-dist --no-interaction --optimize-autoloader as apiserver@apiserver.mycpnv.ch
+ DEBUG [4692e6a2] Command: cd /home/apiserver/apiserver.mycpnv.ch/releases/20190603055316 && php -d allow_url_fopen=true /home/apiserver/apiserver.mycpnv.ch/shared/composer install --no-dev --prefer-dist --no-interaction --optimize-autoloader
+ DEBUG [4692e6a2] 	Loading composer repositories with package information
+ DEBUG [4692e6a2] 	Installing dependencies from lock file
+ DEBUG [4692e6a2] 	Your requirements could not be resolved to an installable set of packages.
+ DEBUG [4692e6a2] 	
+  Problem 1
+    - This package requires php ^7.1.3 but your HHVM version does not satisfy that requirement.
+  Problem 2
+    - Installation request for doctrine/inflector v1.3.0 -> satisfiable by doctrine/inflector[v1.3.0].
+    - doctrine/inflector v1.3.0 requires php ^7.1 -> your PHP version (7.0.32) does not satisfy that requirement.
+  Problem 3
+    - Installation request for laravel/framework v5.8.19 -> satisfiable by laravel/framework[v5.8.19].
+    - laravel/framework v5.8.19 requires php ^7.1.3 -> your PHP version (7.0.32) does not satisfy that requirement.
+  Problem 4
+    - Installation request for nesbot/carbon 2.19.0 -> satisfiable by nesbot/carbon[2.19.0].
+    - nesbot/carbon 2.19.0 requires php ^7.1.8 || ^8.0 -> your PHP version (7.0.32) does not satisfy that requirement.
+  Problem 5
+    - Installation request for symfony/console v4.3.0 -> satisfiable by symfony/console[v4.3.0].
+    - symfony/console v4.3.0 requires php ^7.1.3 -> your PHP version (7.0.32) does not satisfy that requirement.
+  Problem 6
+    - Installation request for symfony/css-selector v4.3.0 -> satisfiable by symfony/css-selector[v4.3.0].
+    - symfony/css-selector v4.3.0 requires php ^7.1.3 -> your PHP version (7.0.32) does not satisfy that requirement.
+  Problem 7
+    - Installation request for symfony/debug v4.3.0 -> satisfiable by symfony/debug[v4.3.0].
+    - symfony/debug v4.3.0 requires php ^7.1.3 -> your PHP version (7.0.32) does not satisfy that requirement.
+  Problem 8
+    - Installation request for symfony/event-dispatcher v4.3.0 -> satisfiable by symfony/event-dispatcher[v4.3.0].
+    - symfony/event-dispatcher v4.3.0 requires php ^7.1.3 -> your PHP version (7.0.32) does not satisfy that requirement.
+  Problem 9
+    - Installation request for symfony/event-dispatcher-contracts v1.1.1 -> satisfiable by symfony/event-dispatcher-contracts[v1.1.1].
+    - symfony/event-dispatcher-contracts v1.1.1 requires php ^7.1.3 -> your PHP version (7.0.32) does not satisfy that requirement.
+  Problem 10
+    - Installation request for symfony/finder v4.3.0 -> satisfiable by symfony/finder[v4.3.0].
+    - symfony/finder v4.3.0 requires php ^7.1.3 -> your PHP version (7.0.32) does not satisfy that requirement.
+  Problem 11
+    - Installation request for symfony/http-foundation v4.3.0 -> satisfiable by symfony/http-foundation[v4.3.0].
+    - symfony/http-foundation v4.3.0 requires php ^7.1.3 -> your PHP version (7.0.32) does not satisfy that requirement.
+  Problem 12
+    - Installation request for symfony/http-kernel v4.3.0 -> satisfiable by symfony/http-kernel[v4.3.0].
+    - symfony/http-kernel v4.3.0 requires php ^7.1.3 -> your PHP version (7.0.32) does not satisfy that requirement.
+  Problem 13
+    - Installation request for symfony/mime v4.3.0 -> satisfiable by symfony/mime[v4.3.0].
+    - symfony/mime v4.3.0 requires php ^7.1.3 -> your PHP version (7.0.32) does not satisfy that requirement.
+  Problem 14
+    - Installation request for symfony/process v4.3.0 -> satisfiable by symfony/process[v4.3.0].
+    - symfony/process v4.3.0 requires php ^7.1.3 -> your PHP version (7.0.32) does not satisfy that requirement.
+  Problem 15
+    - Installation request for symfony/routing v4.3.0 -> satisfiable by symfony/routing[v4.3.0].
+    - symfony/routing v4.3.0 requires php ^7.1.3 -> your PHP version (7.0.32) does not satisfy that requirement.
+  Problem 16
+    - Installation request for symfony/service-contracts v1.1.2 -> satisfiable by symfony/service-contracts[v1.1.2].
+    - symfony/service-contracts v1.1.2 requires php ^7.1.3 -> your PHP version (7.0.32) does not satisfy that requirement.
+  Problem 17
+    - Installation request for symfony/translation v4.3.0 -> satisfiable by symfony/translation[v4.3.0].
+    - symfony/translation v4.3.0 requires php ^7.1.3 -> your PHP version (7.0.32) does not satisfy that requirement.
+  Problem 18
+    - Installation request for symfony/translation-contracts v1.1.2 -> satisfiable by symfony/translation-contracts[v1.1.2].
+    - symfony/translation-contracts v1.1.2 requires php ^7.1.3 -> your PHP version (7.0.32) does not satisfy that requirement.
+  Problem 19
+    - Installation request for symfony/var-dumper v4.3.0 -> satisfiable by symfony/var-dumper[v4.3.0].
+    - symfony/var-dumper v4.3.0 requires php ^7.1.3 -> your PHP version (7.0.32) does not satisfy that requirement.
+  Problem 20
+    - laravel/framework v5.8.19 requires php ^7.1.3 -> your PHP version (7.0.32) does not satisfy that requirement.
+    - laravel/tinker v1.0.8 requires illuminate/console ~5.1 -> satisfiable by laravel/framework[v5.8.19].
+    - Installation request for laravel/tinker v1.0.8 -> satisfiable by laravel/tinker[v1.0.8].
+
