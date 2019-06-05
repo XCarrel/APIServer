@@ -22,7 +22,7 @@ after  'composer:run', 'laravel:migrate'
 # Determine the PHP version chosen in the swisscenter control panel
 task :set_php_version do
   on roles(:all) do
-    execute "ls /home/#{fetch(:swisscenter_username)}/.data/#{fetch(:swisscenter_servername)}_php* 2>/dev/null | sed -E 's/.+(php[[:digit:]]+)$/\\1/' >/tmp/.php-cli-version"
+    execute "ls /home/#{fetch(:swisscenter_username)}/.data/#{fetch(:swisscenter_servername)}_php* 2>/dev/null | sed -E 's/.+(php[[:digit:]]+)$/\1/' >/tmp/.php-cli-version"
   end
 end
 

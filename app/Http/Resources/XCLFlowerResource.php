@@ -2,9 +2,10 @@
 
 namespace App\Http\Resources;
 
+use App\XCLFlower;
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class AJDQRRJobResource extends JsonResource
+class XCLFlowerResource extends JsonResource
 {
     /**
      * Transform the resource into an array.
@@ -14,10 +15,11 @@ class AJDQRRJobResource extends JsonResource
      */
     public function toArray($request)
     {
+        $flower = XCLFlower::find($this->id);
         return [
             'id' => $this->id,
-            'title' => $this->title,
-            'description' => $this->description
+            'names' => $flower->names,
+            'size' => $this->size
         ];
     }
 }
