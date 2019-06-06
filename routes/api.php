@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -12,7 +13,12 @@ use Illuminate\Http\Request;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-Route::apiResource('dii/users', 'DIIUserController');
+Route::prefix('dii')->group(function () {
+    Route::apiResource('users', 'DIIUserController');
+    Route::get('connection', 'DIIUserController@connection');
+});
+
+
 Route::apiResource('sjm/recipes', 'SJMRecipeController');
 Route::apiResource('qns/wines', 'QNSWineController');
 Route::apiResource('ajdqrr/jobs', 'AJDQRRJobController');

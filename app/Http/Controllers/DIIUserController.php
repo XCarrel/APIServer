@@ -6,6 +6,8 @@ use App\DIIUser;
 use App\Http\Resources\DIIUserResource;
 use Illuminate\Http\Request;
 
+
+
 class DIIUserController extends Controller
 {
     /**
@@ -62,4 +64,18 @@ class DIIUserController extends Controller
     {
         //
     }
+
+    public function connection(Request $request){
+
+        $user = DIIUser::all()->where("fingerPrintHash", $request->fingerPrintHash)->first();
+
+        if($user === null){
+            return response()->json([
+                "message" => "AUTHENTIFICATION_FAIL",
+            ], 401);
+        }
+
+        return $user;
+    }
+
 }
