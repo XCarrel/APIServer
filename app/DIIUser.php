@@ -13,7 +13,6 @@ class DIIUser extends Model
     }
 
     public function friendship(){
-        return $this->hasMany('App\DIIFriendship');
+        return $this->hasMany('App\DIIFriendship', 'DII_user_id');
     }
-
 }

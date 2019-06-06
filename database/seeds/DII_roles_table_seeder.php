@@ -14,10 +14,10 @@ class DII_roles_table_seeder extends Seeder
     {
         DB::table('DII_roles')->insert([
             [
-                "name" => "invité"
+                "name" => "user"
             ],
             [
-                "name" => "secu"
+                "name" => "security"
             ]
         ]);
     }

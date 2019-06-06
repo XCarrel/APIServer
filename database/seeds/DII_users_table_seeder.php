@@ -19,14 +19,14 @@ class DII_users_table_seeder extends Seeder
                 "surname" => "Iljazi",
                 "fingerPrintHash" => "cmFuZG9tX2hhc2g=",
                 "ishere" => false,
-                "role_id" => DIIRole::all()->where("name", "invité")->first()->id,
+                "role_id" => DIIRole::all()->where("name", "user")->first()->id,
             ],
             [
                 "name" => "Grand",
                 "surname" => "Baracké",
                 "fingerPrintHash" => "GBasdasd=",
                 "ishere" => false,
-                "role_id" => DIIRole::all()->where("name", "secu")->first()->id,
+                "role_id" => DIIRole::all()->where("name", "security")->first()->id,
             ]
         ]);
     }
