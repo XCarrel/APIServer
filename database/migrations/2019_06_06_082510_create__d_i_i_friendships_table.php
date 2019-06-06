@@ -13,7 +13,7 @@ class CreateDIIFriendshipsTable extends Migration
      */
     public function up()
     {
-        Schema::table('DII_friendships', function (Blueprint $table) {
+        Schema::create('DII_friendships', function (Blueprint $table) {
             $table->unsignedBigInteger('DII_user_id');
             $table->unsignedBigInteger('DII_user_id2');
 

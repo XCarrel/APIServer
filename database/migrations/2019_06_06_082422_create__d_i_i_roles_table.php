@@ -13,7 +13,7 @@ class CreateDIIRolesTable extends Migration
      */
     public function up()
     {
-        Schema::table('DII_roles', function (Blueprint $table) {
+        Schema::create('DII_roles', function (Blueprint $table) {
            $table->bigIncrements('id');
            $table->text("name");
         });

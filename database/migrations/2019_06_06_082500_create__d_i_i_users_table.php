@@ -13,7 +13,7 @@ class CreateDIIUsersTable extends Migration
      */
     public function up()
     {
-        Schema::table('DII_users', function (Blueprint $table) {
+        Schema::create('DII_users', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->text("name");
             $table->longText("fingerPrintHash");

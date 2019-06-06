@@ -17,7 +17,8 @@ class DIIUserResource extends JsonResource
         return [
             'id' => $this->id,
             'name' => $this->name,
-            'fingerprint' => $this->fingerprint
+            'surname' => $this->surname,
+            'fingerprint' => $this->fingerPrintHash
         ];
     }
 }

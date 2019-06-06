@@ -12,10 +12,13 @@ class DII_roles_table_seeder extends Seeder
      */
     public function run()
     {
-        DB::table('DII_roles')->insert(
-          [
-
-          ]
-        );
+        DB::table('DII_roles')->insert([
+            [
+                "name" => "invité"
+            ],
+            [
+                "name" => "secu"
+            ]
+        ]);
     }
 }
