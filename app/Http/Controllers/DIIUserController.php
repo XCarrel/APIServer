@@ -66,7 +66,6 @@ class DIIUserController extends Controller
     }
 
     public function connection(Request $request){
-
         $user = DIIUser::all()->where("fingerPrintHash", $request->fingerPrintHash)->first();
 
         if($user === null){

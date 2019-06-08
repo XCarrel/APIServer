@@ -15,7 +15,7 @@ use Illuminate\Http\Request;
 */
 Route::prefix('dii')->group(function () {
     Route::apiResource('users', 'DIIUserController');
-    Route::get('connection', 'DIIUserController@connection');
+    Route::post('connection', 'DIIUserController@connection');
 });
 
 

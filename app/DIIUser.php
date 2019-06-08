@@ -6,6 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class DIIUser extends Model
 {
+    protected $fillable = [
+        "fingerPrintHash",
+    ];
+
     public $table = "DII_users";
 
     public function role(){
