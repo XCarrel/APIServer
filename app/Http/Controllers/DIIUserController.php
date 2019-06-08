@@ -68,7 +68,7 @@ class DIIUserController extends Controller
     public function connection(Request $request){
         $user = DIIUserResource::collection(DIIUser::all()->where("fingerPrintHash", $request->fingerPrintHash));
 
-        if($user === null || isEmpty($user)){
+        if($user === null || empty($user)){
             return response()->json([
                 "message" => "AUTHENTIFICATION_FAIL",
             ], 401);
