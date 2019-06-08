@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88b0e0e3-640a-4881-850d-38f01d62502a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/app/DIIUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DIIUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DIIUserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DIIUserController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,8 +79,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DIIUserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="67" column="49" selection-start-line="67" selection-start-column="49" selection-end-line="67" selection-end-column="49" />
+            <state relative-caret-position="319">
+              <caret line="81" column="32" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
               <folding>
                 <element signature="e#40#56#0#PHP" expanded="true" />
               </folding>
@@ -104,6 +104,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>dii_friendship</find>
+      <find>DIIUserResource</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -359,12 +360,12 @@
       <updated>1559460351606</updated>
       <workItem from="1559460353037" duration="10871000" />
       <workItem from="1559490666254" duration="2498000" />
-      <workItem from="1559985191394" duration="3185000" />
+      <workItem from="1559985191394" duration="4022000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22692000" />
+    <option name="totallyTimeSpent" value="23529000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -594,7 +595,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Concerns/HasRelationships.php" />
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Http/Resources/Json/JsonResource.php" />
     <entry file="das://17344539-53d5-4df0-bcb5-3d7bafb2bc72/schema/festiaccess/table/dii_friendships" />
     <entry file="das://17344539-53d5-4df0-bcb5-3d7bafb2bc72/schema/festiaccess/table/dii_users" />
     <entry file="file://$PROJECT_DIR$/app/Http/Resources/DIIFriendshipResource.php">
@@ -663,10 +663,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Http/Resources/Json/JsonResource.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="75" column="47" selection-start-line="75" selection-start-column="38" selection-end-line="75" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DIIUserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="67" column="49" selection-start-line="67" selection-start-column="49" selection-end-line="67" selection-end-column="49" />
+        <state relative-caret-position="319">
+          <caret line="81" column="32" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
           <folding>
             <element signature="e#40#56#0#PHP" expanded="true" />
           </folding>

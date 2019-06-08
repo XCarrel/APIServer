@@ -66,12 +66,20 @@ class DIIUserController extends Controller
     }
 
     public function connection(Request $request){
-        $user = DIIUser::all()->where("fingerPrintHash", $request->fingerPrintHash)->first();
+        $user = DIIUserResource::collection(DIIUser::all()->where("fingerPrintHash", $request->fingerPrintHash));
 
-        if($user === null){
+        if($user === null || isEmpty($user)){
             return response()->json([
                 "message" => "AUTHENTIFICATION_FAIL",
             ], 401);
+        }
+
+        // - Ok Houston we got a problem, there is more than 1 account with the same fingerprint
+        //   What's going on ?
+        //
+        //   BEEP [...]
+        if(count($user) > 1){
+            // Let it go for now
         }
 
         return $user;
