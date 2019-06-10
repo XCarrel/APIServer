@@ -16,6 +16,7 @@ class CreateDIIFriendshipsTable extends Migration
         Schema::create('DII_friendships', function (Blueprint $table) {
             $table->unsignedBigInteger('DII_user_id');
             $table->unsignedBigInteger('DII_user_id2');
+            $table->timestamps();
 
             $table->foreign('DII_user_id')->references('id')->on('DII_users');
             $table->foreign('DII_user_id2')->references('id')->on('DII_users');

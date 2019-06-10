@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\DIIRole;
 use App\DIIUser;
 use App\Http\Resources\DIIUserResource;
+use App\User;
 use Illuminate\Http\Request;
 
 
@@ -76,8 +78,6 @@ class DIIUserController extends Controller
 
         // - Ok Houston we got a problem, there is more than 1 account with the same fingerprint
         //   What's going on ?
-        //
-        //   BEEP [...]
         if(count($user) > 1){
             // Let it go for now
         }
@@ -85,4 +85,24 @@ class DIIUserController extends Controller
         return $user;
     }
 
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function subscription(Request $request){
+        $user = DIIUser::where('fingerPrintHash', $request->fingerPrintHash);
+
+        if(empty($user)){ // Problem, this user already exists
+            return response()->json([
+                "message" => "RESOURCE_ALREADY_EXISTS",
+            ], 409);
+        } else{
+            $newUser = new DIIUser($request->all());
+            $newUser->role()->associate(DIIRole::where('name', 'user')->first()->id);
+            $newUser->save();
+            return response()->json([
+                "message" => "CREATED_RESOURCE",
+            ], 201);
+        }
+    }
 }

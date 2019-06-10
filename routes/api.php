@@ -16,6 +16,7 @@ use Illuminate\Http\Request;
 Route::prefix('dii')->group(function () {
     Route::apiResource('users', 'DIIUserController');
     Route::post('connection', 'DIIUserController@connection');
+    Route::post('subscription', 'DIIUserController@subscription'); // This is not restfull but for this purpose it's ok
 });
 
 

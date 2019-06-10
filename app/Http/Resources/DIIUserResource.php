@@ -23,6 +23,7 @@ class DIIUserResource extends JsonResource
             'fingerPrintHash' => $this->fingerPrintHash,
             'role' => $this->role()->get()->first()->name,
             'friends' => [
+                'id' => 999,
                 'name' => "Ami",
                 'surname' => "DeToutLeMonde",
                 'ishere' => true,

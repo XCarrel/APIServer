@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use App\DIIRole;
 
 class CreateDIIUsersTable extends Migration
 {
@@ -18,8 +19,9 @@ class CreateDIIUsersTable extends Migration
             $table->text("name");
             $table->longText("fingerPrintHash");
             $table->text("surname");
-            $table->boolean("ishere");
+            $table->boolean("ishere")->default(false);
             $table->unsignedBigInteger('role_id');
+            $table->timestamps();
 
             $table->foreign('role_id')->references('id')->on('DII_roles');
         });

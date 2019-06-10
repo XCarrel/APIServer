@@ -8,6 +8,8 @@ class DIIUser extends Model
 {
     protected $fillable = [
         "fingerPrintHash",
+        "name",
+        "surname"
     ];
 
     public $table = "DII_users";

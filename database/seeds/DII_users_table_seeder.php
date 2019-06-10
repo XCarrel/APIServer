@@ -20,6 +20,7 @@ class DII_users_table_seeder extends Seeder
                 "fingerPrintHash" => "cmFuZG9tX2hhc2g=",
                 "ishere" => false,
                 "role_id" => DIIRole::all()->where("name", "user")->first()->id,
+                "created_at" => \Carbon\Carbon::now(),
             ],
             [
                 "name" => "Grand",
@@ -27,6 +28,7 @@ class DII_users_table_seeder extends Seeder
                 "fingerPrintHash" => "GBasdasd=",
                 "ishere" => false,
                 "role_id" => DIIRole::all()->where("name", "security")->first()->id,
+                "created_at" => \Carbon\Carbon::now(),
             ]
         ]);
     }
