@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Resources\NHYAccountResource;
 use App\NHYAccount;
+use App\NHYTransaction;
 use Illuminate\Http\Request;
 
 class NHYAccountController extends Controller
@@ -37,7 +38,7 @@ class NHYAccountController extends Controller
      */
     public function show($id)
     {
-        //
+        return NHYAccount::find($id);
     }
 
     /**
@@ -61,5 +62,15 @@ class NHYAccountController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function transactionsOf($id)
+    {
+        return NHYAccount::find($id)->transactions;
+    }
+
+    public function transaction($aid,$tid)
+    {
+        return NHYTransaction::find($tid);
     }
 }

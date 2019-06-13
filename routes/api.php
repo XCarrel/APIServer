@@ -19,6 +19,8 @@ Route::group(['middleware' => ['cors']], function () {
     Route::apiResource('qns/wines', 'QNSWineController');
     Route::apiResource('ajdqrr/jobs', 'AJDQRRJobController');
     Route::apiResource('nhy/accounts', 'NHYAccountController');
+    Route::get('nhy/accounts/{id}/transactions', 'NHYAccountController@transactionsOf');
+    Route::get('nhy/accounts/{aid}/transactions/{tid}', 'NHYAccountController@transaction');
     Route::apiResource('jsn/shops', 'JSNShopController');
     Route::apiResource('pbn/assets', 'PBNAssetController');
     Route::apiResource('xcl/flowers', 'XCLFlowerController');
