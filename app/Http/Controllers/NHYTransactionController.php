@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Resources\NHYTransactionResource;
+use App\NHYTransaction;
 
-class NHYTransactions extends Controller
+class NHYTransactionController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +15,7 @@ class NHYTransactions extends Controller
      */
     public function index()
     {
-        //
+        return NHYTransactionResource::collection(NHYTransaction::all());
     }
 
     /**
