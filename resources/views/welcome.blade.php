@@ -114,6 +114,21 @@
                 <td style="padding: 5px">api/nhy/accounts</td>
                 <td>GET</td>
             </tr>
+            <tr>
+                <td style="padding: 5px">Détail d'un compte</td>
+                <td style="padding: 5px">api/nhy/accounts/{id}</td>
+                <td>GET</td>
+            </tr>
+            <tr>
+                <td style="padding: 5px">Transactions d'un compte</td>
+                <td style="padding: 5px">api/nhy/accounts/{id}/transactions</td>
+                <td>GET</td>
+            </tr>
+            <tr>
+                <td style="padding: 5px">Détail d'une transaction</td>
+                <td style="padding: 5px">api/nhy/accounts/{accid}/transactions/{trid}</td>
+                <td>GET</td>
+            </tr>
             <tr><td colspan="3" class="namerow">Jarod</td></tr>
             <tr>
                 <td style="padding: 5px">Liste des magasins</td>
