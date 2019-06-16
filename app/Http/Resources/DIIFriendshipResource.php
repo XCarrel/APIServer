@@ -17,7 +17,12 @@ class DIIFriendshipResource extends JsonResource
     public function toArray($request)
     {
 
-        $user = ($this->user()->first()->id === $request->route()->parameter('user')->id) ? $this->user2()->first() : $this->user()->first();
+            if ($request->route()->parameter('user') !== null && gettype($request->route()->parameter('user')) !== "string") {
+            $user = ($this->user()->first()->id == $request->route()->parameter('user')->id) ? $this->user2()->first() : $this->user()->first();
+        } else {
+            $user = $this->user2()->get()->first();
+
+        }
 
         return [
             'id' => $user->id,

@@ -22,10 +22,9 @@ class DIIFriendshipController extends Controller
     public function index(DIIUser $user)
     {
         $friendship = $user->friendship()->get();
-        if(count($friendship) == 0) {
+        if (count($friendship) == 0) {
             $friendship = $user->friendship2()->get();
         }
-
 
 
         return DIIFriendshipResource::collection($friendship);
@@ -52,9 +51,9 @@ class DIIFriendshipController extends Controller
      */
     public function show(DIIUser $user, $friendUser)
     {
+        $friendship = $this->getTheRightRelation($user, $friendUser);
 
-
-        //        return DIIFriendshipResource::collection($friendship);
+        return DIIFriendshipResource::collection($friendship);
     }
 
     /**
@@ -85,10 +84,10 @@ class DIIFriendshipController extends Controller
      */
     private function getTheRightRelation(DIIUser $user, $friendId)
     {
-        $friendship = $user->friendship()->get()->where('DII_user_id2', $friendUser)->get();
+        $friendship = $user->friendship()->where('DII_user_id2', $friendId)->get();
 
         if (count($friendship) == 0) {
-            $friendship2 = $user->friendship2()->get()->where('DII_user_id', $friendUser)->get();
+            $friendship2 = $user->friendship2()->where('DII_user_id', $friendId)->get();
             $friendship = $friendship2;
         }
 
