@@ -41,7 +41,7 @@ class DIIUserController extends Controller
      */
     public function show($id)
     {
-        //
+        return DIIUserResource::collection(DIIUser::all()->where('id', $id));
     }
 
     /**
@@ -64,11 +64,12 @@ class DIIUserController extends Controller
      */
     public function destroy($id)
     {
-        //
+
     }
 
     public function connection(Request $request){
         $user = DIIUserResource::collection(DIIUser::all()->where("fingerPrintHash", $request->fingerPrintHash));
+
 
         if($user === null || empty($user)){
             return response()->json([

@@ -21,4 +21,12 @@ class DIIUser extends Model
     public function friendship(){
         return $this->hasMany('App\DIIFriendship', 'DII_user_id');
     }
+
+    /**
+     * Because we have only one line in the dii_friendships meaning a friendship between 2 people, we need to check if this person
+     * is DII_user_id or DII_user_id2 (here friendship2)
+     */
+    public function friendship2(){
+        return $this->hasMany('App\DIIFriendship', 'DII_user_id2');
+    }
 }
