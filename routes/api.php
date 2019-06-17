@@ -24,6 +24,11 @@ Route::apiResource('sjm/recipes', 'SJMRecipeController');
 Route::apiResource('qns/wines', 'QNSWineController');
 Route::apiResource('ajdqrr/jobs', 'AJDQRRJobController');
 Route::apiResource('nhy/accounts', 'NHYAccountController');
+
+Route::post('nhy/accounts', 'NHYAccountController@newaccount'); // create a bank account
+Route::patch('nhy/accounts','NHYAccountController@updateaccount'); // update a bank account
+Route::post('nhy/transactions','NHYAccountController@transaction'); // add a transaction
+
 Route::apiResource('jsn/shops', 'JSNShopController');
 Route::apiResource('pbn/assets', 'PBNAssetController');
 
