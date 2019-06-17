@@ -22,6 +22,9 @@ Route::group(['middleware' => ['cors']], function () {
     Route::apiResource('nhy/transactions', 'NHYTransactionController');
     Route::get('nhy/accounts/{id}/transactions', 'NHYAccountController@transactionsOf');
     Route::get('nhy/accounts/{aid}/transactions/{tid}', 'NHYAccountController@transaction');
+    Route::post('nhy/accounts', 'NHYAccountController@newaccount'); // create a bank account
+    Route::patch('nhy/accounts','NHYAccountController@updateaccount'); // update a bank account
+    Route::post('nhy/transactions','NHYAccountController@newtransaction'); // add a transaction
     Route::apiResource('jsn/shops', 'JSNShopController');
     Route::apiResource('pbn/assets', 'PBNAssetController');
     Route::apiResource('xcl/flowers', 'XCLFlowerController');
