@@ -83,57 +83,96 @@
         <p>Ce site sert de backend pour exercer les appels à une API depuis les applications mobiles développées dans le cours MOB1 (SI-T1a, juin 2019)</p>
         <p>Il sert les points d'entrées suivants:</p>
         <table style="text-align: left">
-            <tr><th>Fonction</th><th>Route</th><th>Méthode</th></tr>
-            <tr><td colspan="3" class="namerow">Dardan</td></tr>
+            <tr><th>Fonction</th><th>Route</th><th>Méthode</th><th>Paramètres</th><th>Réponse</th></tr>
+            <tr><td colspan="5" class="namerow">Dardan</td></tr>
             <tr>
                 <td style="padding: 5px">Liste des utilisateurs</td>
                 <td style="padding: 5px">api/dii/users</td>
                 <td>GET</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
             </tr>
-            <tr><td colspan="3" class="namerow">Senistan</td></tr>
+            <tr><td colspan="5" class="namerow">Senistan</td></tr>
             <tr>
                 <td style="padding: 5px">Liste des recettes</td>
                 <td style="padding: 5px">api/sjm/recipes</td>
                 <td>GET</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
             </tr>
-            <tr><td colspan="3" class="namerow">Alexandre + Quentin</td></tr>
+            <tr><td colspan="5" class="namerow">Alexandre + Quentin</td></tr>
             <tr>
                 <td style="padding: 5px">Liste des jobs</td>
                 <td style="padding: 5px">api/ajdqrr/jobs</td>
                 <td>GET</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
             </tr>
-            <tr><td colspan="3" class="namerow">Quentin</td></tr>
+            <tr><td colspan="5" class="namerow">Quentin</td></tr>
             <tr>
                 <td style="padding: 5px">Liste des vins</td>
                 <td style="padding: 5px">api/qns/wines</td>
                 <td>GET</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
             </tr>
-            <tr><td colspan="3" class="namerow">Nicolas</td></tr>
+            <tr><td colspan="5" class="namerow">Nicolas</td></tr>
             <tr>
                 <td style="padding: 5px">Liste des comptes</td>
                 <td style="padding: 5px">api/nhy/accounts</td>
                 <td>GET</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
             </tr>
             <tr>
                 <td style="padding: 5px">Détail d'un compte</td>
                 <td style="padding: 5px">api/nhy/accounts/{id}</td>
                 <td>GET</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
             </tr>
             <tr>
                 <td style="padding: 5px">Transactions d'un compte</td>
                 <td style="padding: 5px">api/nhy/accounts/{id}/transactions</td>
                 <td>GET</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
             </tr>
             <tr>
                 <td style="padding: 5px">Détail d'une transaction</td>
                 <td style="padding: 5px">api/nhy/accounts/{accid}/transactions/{trid}</td>
                 <td>GET</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
             </tr>
-            <tr><td colspan="3" class="namerow">Jarod</td></tr>
+            <tr>
+                <td style="padding: 5px">Nouveau compte</td>
+                <td style="padding: 5px">api/nhy/accounts</td>
+                <td>POST</td>
+                <td>name<br>favorite<br>value</td>
+                <td>Compte créé (avec son id)</td>
+            </tr>
+            <tr>
+                <td style="padding: 5px">Update compte</td>
+                <td style="padding: 5px">api/nhy/accounts</td>
+                <td>PATCH</td>
+                <td>id<br>favorite<br>value</td>
+                <td>Compte updaté</td>
+            </tr>
+            <tr>
+                <td style="padding: 5px">Nouvelle transaction</td>
+                <td style="padding: 5px">api/nhy/transactions</td>
+                <td>POST</td>
+                <td>account_id<br>moment<br>amount</td>
+                <td>La transaction créée (avec son id)</td>
+            </tr>
+            <tr><td colspan="5" class="namerow">Jarod</td></tr>
             <tr>
                 <td style="padding: 5px">Liste des magasins</td>
                 <td style="padding: 5px">api/jsn/shops</td>
                 <td>GET</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
             </tr>
         </table>
 
