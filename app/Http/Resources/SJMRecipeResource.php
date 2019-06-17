@@ -18,7 +18,10 @@ class SJMRecipeResource extends JsonResource
             'id' => $this->id,
             'title' => $this->title,
             'picture' => $this->picture,
-            'calories' => $this->calories
+            'calories' => $this->calories,
+            'time' => $this->time,
+            'tutorial' => $this->tutorial,
+            'ingredients' => $this->ingredients
         ];
     }
 }
