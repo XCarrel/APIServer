@@ -10,6 +10,6 @@ class SJMRecipe extends Model
 
     public function ingredients()
     {
-        return $this->belongsToMany('App\SJMIngredients', "SJM_ingredients_recipes");
+        return $this->belongsToMany('App\SJMIngredient', "SJM_ingredients_recipes","recipe_id","ingredient_id");
     }
 }

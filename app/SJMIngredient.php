@@ -4,12 +4,12 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class SJMIngredients extends Model
+class SJMIngredient extends Model
 {
     public $table = "SJM_ingredients";
 
     public function recipes()
     {
-        return $this->belongsToMany('App\SJMRecipes', "SJM_ingredients_recipes");
+        return $this->belongsToMany('App\SJMRecipe', "SJM_ingredients_recipes","ingredient_id","recipe_id");
     }
 }
