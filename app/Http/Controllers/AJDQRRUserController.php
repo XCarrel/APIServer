@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\AJDQRRJob;
-use App\Http\Resources\AJDQRRJobResource;
+use App\AJDQRRUser;
+use App\Http\Resources\AJDQRRUserResource;
 use Illuminate\Http\Request;
 
-class AJDQRRJobController extends Controller
+class AJDQRRUserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +15,7 @@ class AJDQRRJobController extends Controller
      */
     public function index()
     {
-        return AJDQRRJobResource::collection(AJDQRRJob::all());
+        return AJDQRRUserResource::collection(AJDQRRUser::all());
     }
 
     /**
@@ -37,7 +37,7 @@ class AJDQRRJobController extends Controller
      */
     public function show($id)
     {
-        return AJDQRRJob::find($id);
+        return new AJDQRRUserResource(AJDQRRUser::find($id));
     }
 
     /**

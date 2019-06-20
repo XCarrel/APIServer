@@ -108,6 +108,27 @@
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
+            <tr>
+                <td style="padding: 5px">Détail d'un job</td>
+                <td style="padding: 5px">api/ajdqrr/jobs/{id}</td>
+                <td>GET</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td style="padding: 5px">Liste des users</td>
+                <td style="padding: 5px">api/ajdqrr/users</td>
+                <td>GET</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td style="padding: 5px">Détail d'un user</td>
+                <td style="padding: 5px">api/ajdqrr/users/{id}</td>
+                <td>GET</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
             <tr><td colspan="5" class="namerow">Quentin</td></tr>
             <tr>
                 <td style="padding: 5px">Liste des vins</td>
