@@ -20,7 +20,8 @@ class PBNAssetResource extends JsonResource
             'model' => $this->model,
             'location' => $this->location,
             'type' => $this->type_id,
-            'status' => $this->status_id
+            'status' => $this->status_id,
+            'audits' => $this->audits
         ];
     }
 }
