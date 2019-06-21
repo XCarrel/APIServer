@@ -107,8 +107,7 @@ class NHYAccountController extends Controller
     {
         $newtrans = new NHYTransaction();
         $newtrans->amount = $request->input('amount');
-        $newtrans->moment = $request->input('moment');
-        $newtrans->account_id = $request->input('accountid');
+        $newtrans->account_id = $request->input('account_id');
         try {
             $newtrans->save();
             return $newtrans;
